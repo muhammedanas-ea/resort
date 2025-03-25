@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Facilities from "../components/home/Facilities";
 import Destination from "../components/home/Destination";
 import Footer from "../components/Footer";
-// import Testimonials from "../components/home/Testimonials";
+import Testimonials from "../components/home/Testimonials";
 
 const Home = () => {
   return (
@@ -12,14 +12,13 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      <Facilities />
-      <div className="relative h-[40rem] w-full overflow-hidden bg-[#ffffffb0]">
+      <div className="relative h-[30rem] w-full overflow-hidden bg-black">
         <video
-          src="https://v1.pinimg.com/videos/mc/720p/ea/36/83/ea36831aa23769a2f59d34497b00c76b.mp4"
+          src="https://cdn.pixabay.com/video/2024/05/08/211152_tiny.mp4"
           autoPlay
           muted
           loop
-          className="w-full h-full object-cover scale-y-95"
+          className="w-full h-full object-cover scale-y-100"
           style={{
             maskImage:
               "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 5%, rgba(0, 0, 0, 0.8) 15%, black 25%, black 75%, rgba(0, 0, 0, 0.8) 85%, rgba(0, 0, 0, 0.2) 95%, transparent 100%)",
@@ -28,9 +27,11 @@ const Home = () => {
           }}
           aria-label="Background video"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white opacity-40 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-10 pointer-events-none" />
       </div>
-      {/* <Testimonials/> */}
+      <Facilities />
+     
+      <Testimonials/>
       <Destination />
       <Footer />
     </div>

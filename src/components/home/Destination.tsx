@@ -1,5 +1,5 @@
-import ChembraPeak from "../../assets/images/ChembraPeak.jpg";
-import EdakkalCaves from "../../assets/images/EdakkalCaves.webp";
+import ChembraPeak from "../../assets/images/ChembraPeak.webp";
+import EdakkalCaves from "../../assets/images/EdakkalCaves.jpg";
 import BanasuraSagar from "../../assets/images/BanasuraSagar.webp";
 import SoochiparaFalls from "../../assets/images/SoochiparaFalls.webp";
 import PookodeLake from "../../assets/images/PookodeLake.webp";
@@ -89,9 +89,9 @@ const Destination = () => {
           {destinations.map((destination) => (
             <div
               key={destination.id}
-              className="flex-shrink-0 w-80 mx-[3px] first:ml-0 last:mr-0 "
+              className="flex-shrink-0 w-72 mx-[4px] first:ml-0 last:mr-0"
             >
-              <div className="relative h-[480px] group overflow-hidden rounded-t-lg">
+              <div className="relative h-96 group overflow-hidden rounded-t-lg">
                 <div className="absolute inset-0  bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 z-10"></div>
                 <img
                   src={destination.image}
