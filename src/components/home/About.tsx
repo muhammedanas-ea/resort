@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="lg:min-h-screen flex items-center justify-center">
+    <div className="lg:min-h-screen flex items-center justify-center pt-10 lg:pt-0">
       <div className="container mx-auto px-4 lg:px-8 text-start">
         {/* Decorative Line */}
         <div className="mb-12 w-24 border-t-2 border-black/20" />
