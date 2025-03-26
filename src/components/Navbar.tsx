@@ -65,7 +65,7 @@ const Navbar = () => {
         scrolled ? "bg-black" : "bg-transparent"
       }`}
     >
-      <div className="container  px-4 lg:px-8 py-4 mx-auto">
+      <div className="container  px-4 lg:px-8 py-6 mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
@@ -74,7 +74,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <div className="w-20 h-14">
+            <div className="w-28 h-10">
               <img
                 src={logo}
                 alt="Logo"

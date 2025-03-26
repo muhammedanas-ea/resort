@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand Information */}
           <div className="space-y-4 md:col-span-2">
             <div className="flex items-center">
-              <div className="w-28 h-20">
+              <div className="w-28 h-10">
                 <img
                   src={logo}
                   alt="Logo"
