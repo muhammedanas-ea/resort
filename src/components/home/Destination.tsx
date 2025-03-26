@@ -104,7 +104,7 @@ const Destination = () => {
               itemScope
               itemType="https://schema.org/TouristAttraction"
             >
-              <div className="relative h-96 group overflow-hidden rounded-lg">
+              <div className="relative h-96 group overflow-hidden rounded-t-4xl">
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 z-10"></div>
                 <img
                   src={destination.image}
