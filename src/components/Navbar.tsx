@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-black shadow-lg" : "bg-transparent"}`}>
-      <div className="max-w-7xl px-5 md:px-7 py-4 mx-auto">
+      <div className="container  px-4 lg:px-8 py-4 mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div 

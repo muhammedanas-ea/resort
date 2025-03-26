@@ -40,15 +40,16 @@ const Facilities = () => {
       className="container mx-auto px-4 lg:px-8 py-16 lg:py-24"
       aria-labelledby="facilities-heading"
     >
-      <div className="pb-12 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
-        <h1 className="text-3xl  font-normal leading-[1.15] md:text-5xl md:leading-[1.15] max-w-lg playfair">
-          World-Class Facilities at Boska Resort
-        </h1>
-        <p className="text-gray-600 text-base max-w-full md:max-w-[31rem] leading-relaxed">
-          Experience unparalleled comfort with our curated selection of luxury
-          amenities designed to enhance your stay in Wayanad
-        </p>
-      </div>
+      <div className="mb-10 w-24 border-t-2 border-black/20" />
+
+      <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-gray-600">
+        World-Class Facilities at Boska Resort
+      </h2>
+
+      <h1 className="mb-12 text-4xl playfair font-normal leading-[1.15] md:leading-[1.15] max-w-6xl">
+        Experience unparalleled comfort with our curated selection of luxury
+        amenities designed to enhance your stay in Wayanad
+      </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
         {facilities.map((facility, index) => (
