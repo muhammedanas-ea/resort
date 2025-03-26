@@ -61,7 +61,7 @@ const Testimonials = () => {
   return (
     <section
       aria-label="Guest testimonials"
-      className="relative py-12 md:py-16 bg-cover bg-center bg-fixed"
+      className="relative py-12  md:py-16 bg-cover bg-center bg-fixed"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')`,
       }}
