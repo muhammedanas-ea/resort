@@ -139,7 +139,7 @@ const Hero = () => {
           <div className="min-h-[4rem] md:min-h-[5rem]">
             {currentPhrase.word.split("").map((letter, index) => (
               <motion.span
-                className="text-yellow-400 text-4xl md:text-6xl lg:text-7xl playfair font-medium"
+                className="text-[#B59D71] text-4xl md:text-6xl lg:text-7xl playfair font-medium"
                 key={`${currentWordIndex}-${index}`}
                 initial={{ opacity: 0, rotateX: -90 }}
                 animate={

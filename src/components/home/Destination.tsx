@@ -72,7 +72,7 @@ const Destination = () => {
   return (
     <div className="bg-white">
       <div className="container mx-auto px-4 lg:px-8 py-16 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
-        <h1 className="text-4xl md:text-5xl max-w-lg playfair font-medium text-gray-800">
+        <h1 className="text-3xl  font-normal leading-[1.15] md:text-5xl md:leading-[1.15] max-w-lg playfair">
           Discover Wayanad's Premier Attractions
         </h1>
         <p className="text-gray-600 text-base max-w-full md:max-w-[31rem] leading-relaxed">
@@ -89,9 +89,9 @@ const Destination = () => {
           {destinations.map((destination) => (
             <div
               key={destination.id}
-              className="flex-shrink-0 w-72 mx-[4px] first:ml-0 last:mr-0"
+              className="flex-shrink-0 w-72 mx-[1px] first:ml-0 last:mr-0"
             >
-              <div className="relative h-96 group overflow-hidden rounded-t-lg">
+              <div className="relative h-96 group overflow-hidden">
                 <div className="absolute inset-0  bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 z-10"></div>
                 <img
                   src={destination.image}

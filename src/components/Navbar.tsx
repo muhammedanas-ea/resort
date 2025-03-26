@@ -88,7 +88,7 @@ const Navbar = () => {
                 {item}
                 <span
                   className={`absolute bottom-0 left-0 w-full h-0.5 origin-left transition-all duration-300 
-                    ${activeTab === item ? "scale-x-100 bg-amber-400" : "scale-x-0 group-hover:scale-x-100 bg-white"}`}
+                    ${activeTab === item ? "scale-x-100 bg-[#B59D71]" : "scale-x-0 group-hover:scale-x-100 bg-white"}`}
                 ></span>
               </motion.a>
             ))}
@@ -101,11 +101,11 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
           >
             <button 
-              className={`flex gap-2 items-center text-sm font-medium border ${scrolled ? "border-amber-400 hover:bg-amber-400/10" : "border-white hover:bg-white/10"} justify-center px-6 py-2 rounded-full transition-colors duration-300`}
+              className={`flex gap-2 items-center text-sm font-medium border ${scrolled ? "border-[#B59D71] hover:bg-amber-400/10" : "border-white hover:bg-white/10"} justify-center px-6 py-2 rounded-lg transition-colors duration-300`}
               onClick={() => window.location.href = 'tel:8157880985'}
             >
-              <span className={scrolled ? "text-amber-400" : "text-white"}>Book Now</span>
-              <IoIosArrowRoundForward className={scrolled ? "text-amber-400" : "text-white"} size={20} />
+              <span className={scrolled ? "text-[#B59D71]" : "text-white"}>Book Now</span>
+              <IoIosArrowRoundForward className={scrolled ? "text-[#B59D71]" : "text-white"} size={20} />
             </button>
           </motion.div>
 

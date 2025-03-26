@@ -72,7 +72,7 @@ const Testimonials = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl playfair font-medium text-white mb-4">
               Guest Experiences
             </h1>
-            <div className="w-32 h-1 bg-amber-400 mb-6 mx-auto md:mx-0" />
+            <div className="w-32 h-1 bg-[#B59D71] mb-6 mx-auto md:mx-0" />
             <p className="text-stone-300 text-sm md:text-base md:max-w-md px-4 md:px-0">
               Discover what our distinguished guests have to say about their unforgettable stays at Boska Resort.
             </p>
@@ -100,7 +100,7 @@ const Testimonials = () => {
                         {testimonial.quote}
                       </p>
                       <footer className="space-y-2">
-                        <cite className="text-amber-400 font-semibold text-sm sm:text-base md:text-lg not-italic" itemProp="author">
+                        <cite className="text-[#B59D71] font-semibold text-sm sm:text-base md:text-lg not-italic" itemProp="author">
                           {testimonial.author}
                         </cite>
                         <p className="text-stone-400 text-xs sm:text-sm md:text-sm" itemProp="description">
@@ -116,14 +116,14 @@ const Testimonials = () => {
               <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-2">
                 <button
                   onClick={prevTestimonial}
-                  className="p-1.5 sm:p-2 md:p-3 text-amber-400 hover:text-amber-300 bg-stone-900/60 hover:bg-stone-900/80 rounded-full transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                  className="p-1.5 sm:p-2 md:p-3 text-[#B59D71] hover:text-amber-300 bg-stone-900/60 hover:bg-stone-900/80 rounded-full transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-amber-400"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />
                 </button>
                 <button
                   onClick={nextTestimonial}
-                  className="p-1.5 sm:p-2 md:p-3 text-amber-400 hover:text-amber-300 bg-stone-900/60 hover:bg-stone-900/80 rounded-full transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                  className="p-1.5 sm:p-2 md:p-3 text-[#B59D71] hover:text-amber-300 bg-stone-900/60 hover:bg-stone-900/80 rounded-full transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-amber-400"
                   aria-label="Next testimonial"
                 >
                   <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />
@@ -138,7 +138,7 @@ const Testimonials = () => {
                     onClick={() => setCurrentIndex(index)}
                     className={`w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                       currentIndex === index
-                        ? "bg-amber-400 scale-125"
+                        ? "bg-[#B59D71] scale-125"
                         : "bg-stone-400 hover:bg-stone-300"
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}

@@ -36,9 +36,12 @@ const Facilities = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 lg:px-8 py-16 lg:py-24" aria-labelledby="facilities-heading">
+    <section
+      className="container mx-auto px-4 lg:px-8 py-16 lg:py-24"
+      aria-labelledby="facilities-heading"
+    >
       <div className="pb-12 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
-        <h1 className="text-4xl md:text-5xl max-w-lg playfair font-medium text-gray-800">
+        <h1 className="text-3xl  font-normal leading-[1.15] md:text-5xl md:leading-[1.15] max-w-lg playfair">
           World-Class Facilities at Boska Resort
         </h1>
         <p className="text-gray-600 text-base max-w-full md:max-w-[31rem] leading-relaxed">
@@ -51,13 +54,17 @@ const Facilities = () => {
         {facilities.map((facility, index) => (
           <div
             key={index}
-            className="bg-gray-50 p-6 rounded-lg border border-gray-300 hover:border-amber-300 transition-colors text-center hover:shadow-md"
+            className="bg-gray-50 p-6 rounded-lg border border-[#B59D71] hover:border-[#9D8460] transition-colors text-center hover:shadow-md"
           >
-            <div className=" text-amber-300 w-12 h-12 flex items-center justify-center mx-auto mb-4">
+            <div className=" text-[#B59D71] w-12 h-12 flex items-center justify-center mx-auto mb-4">
               {facility.icon}
             </div>
-            <h3 className="font-medium text-gray-800 mb-2 text-lg">{facility.name}</h3>
-            <p className="text-sm text-gray-600 hidden md:block">{facility.description}</p>
+            <h3 className="font-medium text-gray-800 mb-2 text-lg">
+              {facility.name}
+            </h3>
+            <p className="text-sm text-gray-600 hidden md:block">
+              {facility.description}
+            </p>
           </div>
         ))}
       </div>
