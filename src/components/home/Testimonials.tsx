@@ -96,7 +96,7 @@ const Testimonials = () => {
                       itemType="https://schema.org/Review"
                     >
                       <Quote className="text-amber-400/40 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-4 md:mb-6 transform -scale-x-100" />
-                      <p className="text-sm sm:text-base md:text-lg text-stone-100 leading-relaxed mb-4 md:mb-6 italic px-2 sm:px-4 md:px-0">
+                      <p className="text-sm  sm:text-base md:text-lg text-stone-100 leading-relaxed mb-4 md:mb-6 italic px-2 sm:px-4 md:px-0">
                         {testimonial.quote}
                       </p>
                       <footer className="space-y-2">

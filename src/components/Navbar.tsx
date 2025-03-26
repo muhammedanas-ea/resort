@@ -23,7 +23,7 @@ const Navbar = () => {
     setMobileMenuOpen(false);
   };
 
-  const navItems = ["HOME", "ROOMS", "AMENITIES", "GALLERY", "CONTACT"];
+  const navItems = ["HOME", "ABOUT US", "ROOM", "BLOG", "CONTACT US"];
 
   // Animation variants
   const mobileMenuVariants = {
@@ -59,8 +59,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-black shadow-lg" : "bg-transparent"}`}>
-      <div className="container  px-4 lg:px-8 py-4 mx-auto">
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-black" : "bg-transparent"}`}>
+      <div className="container  px-4 lg:px-8 py-6 mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div 
@@ -83,7 +83,7 @@ const Navbar = () => {
                 onClick={() => handleTabClick(item)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`relative py-2 px-1 tracking-wider ${scrolled ? "text-white" : "text-white"}`}
+                className={`relative py-2 playfair px-1 tracking-wider ${scrolled ? "text-white" : "text-white"}`}
               >
                 {item}
                 <span
@@ -161,7 +161,7 @@ const Navbar = () => {
                       href="#"
                       onClick={() => handleTabClick(item)}
                       variants={mobileItemVariants}
-                      className={`text-xl font-medium ${activeTab === item ? "text-[#B59D71]" : "text-white"}`}
+                      className={`text-xl playfair font-medium ${activeTab === item ? "text-[#B59D71]" : "text-white"}`}
                     >
                       {item}
                     </motion.a>

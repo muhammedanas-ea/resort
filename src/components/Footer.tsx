@@ -19,7 +19,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <nav aria-label="Quick links">
-            <h3 className="text-white text-xl mb-4 font-medium">Explore</h3>
+            <h3 className="text-white playfair text-xl mb-4 font-medium">Explore</h3>
             <ul className="space-y-2">
               <li><a href="/privacy-policy" className="hover:text-white transition-colors duration-200" aria-label="Privacy policy">Privacy Policy</a></li>
               <li><a href="/terms" className="hover:text-white transition-colors duration-200" aria-label="Terms and conditions">Terms & Conditions</a></li>
@@ -30,7 +30,7 @@ const Footer = () => {
 
           {/* Contact Information */}
           <address className="not-italic">
-            <h3 className="text-white text-xl mb-4 font-medium">Contact Us</h3>
+            <h3 className="text-white text-xl mb-4 playfair font-medium">Contact Us</h3>
             <ul className="space-y-2" itemScope itemType="https://schema.org/LodgingBusiness">
               <li itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                 <span itemProp="streetAddress">Chembra Peak Road</span>,{" "}
@@ -54,7 +54,7 @@ const Footer = () => {
 
           {/* Social Media */}
           <div>
-            <h3 className="text-white text-xl mb-4 font-medium">Follow Us</h3>
+            <h3 className="text-white playfair text-xl mb-4 font-medium">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="https://instagram.com/boskawayanad" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" className="hover:text-white transition-colors duration-200">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" role="img">
