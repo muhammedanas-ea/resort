@@ -77,11 +77,11 @@ const Destination = () => {
           <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-gray-600">
             What We Offer
           </h2>
-          <h1 className="text-3xl md:text-4xl playfair font-normal leading-[1.15] md:leading-[1.15] max-w-lg">
+          <h1 className="text-4xl playfair font-normal leading-[1.15] md:leading-[1.15] max-w-lg">
             Discover Wayanad's Premier Attractions
           </h1>
         </div>
-        <p className="text-gray-600 text-base max-w-full md:max-w-[31rem] leading-relaxed">
+        <p className="text-gray-600 hidden md:block text-base max-w-full md:max-w-[31rem] leading-relaxed">
           As guests of Boska Resort, you'll enjoy privileged access to Wayanad's
           most spectacular natural wonders in Kerala. Our concierge service
           offers bespoke experiences at these iconic locations including Chembra

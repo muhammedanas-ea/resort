@@ -5,6 +5,7 @@ import Facilities from "../components/home/Facilities";
 import Destination from "../components/home/Destination";
 import Footer from "../components/Footer";
 import Testimonials from "../components/home/Testimonials";
+// import Gallery from "../components/home/Gallery";
 
 const Home = () => {
   return (
@@ -22,9 +23,11 @@ const Home = () => {
           aria-label="Background video"
         />
       </div>
+      {/* <Gallery /> */}
+
       <Facilities />
-     
-      <Testimonials/>
+
+      <Testimonials />
       <Destination />
       <Footer />
     </div>
