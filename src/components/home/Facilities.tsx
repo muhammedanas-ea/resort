@@ -37,7 +37,7 @@ const Facilities = () => {
 
   return (
     <section
-      className="container mx-auto px-4 lg:px-8 py-16 lg:py-24"
+      className="container mx-auto px-4 lg:px-8 py-16  lg:py-24"
       aria-labelledby="facilities-heading"
     >
       <div className="mb-10 w-24 border-t-2 border-black/20" />
@@ -46,7 +46,7 @@ const Facilities = () => {
         World-Class Facilities at Boska Resort
       </h2>
 
-      <h1 className="mb-12 text-4xl playfair font-normal leading-[1.15] md:leading-[1.15] max-w-6xl">
+      <h1 className="mb-12 text-3xl md:text-4xl playfair font-normal leading-[1.15] md:leading-[1.15] max-w-6xl">
         Experience unparalleled comfort with our curated selection of luxury
         amenities designed to enhance your stay in Wayanad
       </h1>

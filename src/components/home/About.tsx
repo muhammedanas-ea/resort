@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="flex items-center justify-center py-24">
+    <div className="flex items-center justify-center  py-16 lg:py-24">
       <div className="container mx-auto px-4 lg:px-8 text-start">
         {/* Decorative Line */}
         <div className="mb-10 w-24 border-t-2 border-black/20" />
@@ -11,7 +11,7 @@ const About = () => {
           What We Offer
         </h2>
 
-        <h1 className="mb-12 text-4xl playfair font-normal leading-[1.15] md:text-4xl md:leading-[1.15] max-w-6xl">
+        <h1 className="mb-12 text-3xl playfair font-normal leading-[1.15] md:text-4xl md:leading-[1.15] max-w-6xl">
           Luxury resorts, private tours and VIP transfers, carefully hand-picked
           based on your tastes and style
         </h1>
