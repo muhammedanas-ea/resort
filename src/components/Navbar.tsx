@@ -161,14 +161,14 @@ const Navbar = () => {
                       href="#"
                       onClick={() => handleTabClick(item)}
                       variants={mobileItemVariants}
-                      className={`text-xl font-medium ${activeTab === item ? "text-amber-400" : "text-white"}`}
+                      className={`text-xl font-medium ${activeTab === item ? "text-[#B59D71]" : "text-white"}`}
                     >
                       {item}
                     </motion.a>
                   ))}
                   <motion.button
                     variants={mobileItemVariants}
-                    className="flex gap-3 items-center text-sm font-medium border border-amber-400 text-amber-400 justify-center px-6 py-3 rounded-full mt-8"
+                    className="flex gap-3 items-center text-sm font-medium border border-[#B59D71] text-[#B59D71] justify-center px-6 py-3 rounded-full mt-8"
                     onClick={() => {
                       window.location.href = 'tel:8157880985';
                       setMobileMenuOpen(false);
