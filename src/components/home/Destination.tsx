@@ -73,8 +73,8 @@ const Destination = () => {
     <section className="bg-white" aria-label="Wayanad Tourist Attractions">
       <header className="container mx-auto px-4 lg:px-8  py-16 lg:py-24 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
         <div>
-          <div className="mb-10 w-24 border-t-2 border-black/20" />
-          <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-gray-600">
+          <div className="mb-10 w-24 border-t-2 border-[#B59D71]" />
+          <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-[#B59D71]">
             What We Offer
           </h2>
           <h1 className="text-4xl playfair font-normal leading-[1.15] md:leading-[1.15] max-w-lg">

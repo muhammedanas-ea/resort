@@ -40,9 +40,9 @@ const Facilities = () => {
       className="container mx-auto px-4 lg:px-8 py-16  lg:py-24"
       aria-labelledby="facilities-heading"
     >
-      <div className="mb-10 w-24 border-t-2 border-black/20" />
+      <div className="mb-10 w-24 border-t-2 border-[#B59D71]" />
 
-      <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-gray-600">
+      <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-[#B59D71]">
         World-Class Facilities at Boska Resort
       </h2>
 
