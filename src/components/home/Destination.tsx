@@ -120,7 +120,7 @@ const Destination = () => {
                 />
                 <div className="absolute top-8 left-6 z-20 w-full pr-12">
                   <h3
-                    className="text-2xl playfair font-semibold text-white"
+                    className="text-2xl playfair font-normal text-white"
                     itemProp="name"
                   >
                     {destination.title}

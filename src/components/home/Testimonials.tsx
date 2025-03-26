@@ -69,7 +69,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
           <div className="text-center md:text-left">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl playfair font-medium text-white mb-4">
+            <h1 className="text-3xl md:text-4xl playfair font-normal leading-[1.15] md:leading-[1.15] text-white mb-4">
               Guest Experiences
             </h1>
             <div className="w-32 h-1 bg-[#B59D71] mb-6 mx-auto md:mx-0" />
@@ -100,7 +100,7 @@ const Testimonials = () => {
                         {testimonial.quote}
                       </p>
                       <footer className="space-y-2">
-                        <cite className="text-[#B59D71] font-semibold text-sm sm:text-base md:text-lg not-italic" itemProp="author">
+                        <cite className="text-[#B59D71] playfair font-semibold text-sm sm:text-base md:text-lg not-italic" itemProp="author">
                           {testimonial.author}
                         </cite>
                         <p className="text-stone-400 text-xs sm:text-sm md:text-sm" itemProp="description">
@@ -116,14 +116,14 @@ const Testimonials = () => {
               <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-2">
                 <button
                   onClick={prevTestimonial}
-                  className="p-1.5 sm:p-2 md:p-3 text-[#B59D71] hover:text-amber-300 bg-stone-900/60 hover:bg-stone-900/80 rounded-full transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                  className="p-1.5 sm:p-2 md:p-3 text-[#B59D71] hover:text-amber-300 bg-stone-900/60 hover:bg-stone-900/80 rounded-full transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#B59D71]"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />
                 </button>
                 <button
                   onClick={nextTestimonial}
-                  className="p-1.5 sm:p-2 md:p-3 text-[#B59D71] hover:text-amber-300 bg-stone-900/60 hover:bg-stone-900/80 rounded-full transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-amber-400"
+                  className="p-1.5 sm:p-2 md:p-3 text-[#B59D71] hover:text-amber-300 bg-stone-900/60 hover:bg-stone-900/80 rounded-full transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#B59D71]"
                   aria-label="Next testimonial"
                 >
                   <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />

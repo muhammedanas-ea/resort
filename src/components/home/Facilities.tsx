@@ -55,12 +55,12 @@ const Facilities = () => {
         {facilities.map((facility, index) => (
           <div
             key={index}
-            className="bg-gray-50 p-6 rounded-lg border border-[#B59D71] hover:border-[#9D8460] transition-colors text-center hover:shadow-md"
+            className=" p-6 rounded-lg border border-[#B59D71] hover:border-[#9D8460] transition-colors text-center hover:shadow-md"
           >
             <div className=" text-[#B59D71] w-12 h-12 flex items-center justify-center mx-auto mb-4">
               {facility.icon}
             </div>
-            <h3 className="font-medium text-gray-800 mb-2 text-lg">
+            <h3 className="font-normal playfair  mb-2 text-lg">
               {facility.name}
             </h3>
             <p className="text-sm text-gray-600 hidden md:block">
