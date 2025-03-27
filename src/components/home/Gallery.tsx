@@ -25,7 +25,7 @@ const Gallery = () => {
           />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-[70%_1fr] gap-5 h-full">
-          <div className="grid grid-rows-[1fr_60%] gap-[12px] h-full">
+          <div className="grid grid-rows-[1fr_60%] gap-5 h-full">
             <div className="grid grid-cols-[60%_1fr] gap-5">
               <div className="overflow-hidden rounded-lg w-full h-full">
                 <div
