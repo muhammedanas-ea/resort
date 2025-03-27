@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <div className="overflow-hidden">
       <Navbar />
-      <div>
+      <div className="min-h-screen">
         <Outlet />
       </div>
       <Footer />

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
@@ -24,7 +25,13 @@ const Navbar = () => {
     setMobileMenuOpen(false);
   };
 
-  const navItems = ["HOME", "ABOUT US", "ROOM", "BLOG", "CONTACT US"];
+  const navItems = [
+    { item: "HOME", path: "/" },
+    { item: "ABOUT US", path: "/about" },
+    { item: "ROOM", path: "/room" },
+    { item: "BLOG", path: "/blog" },
+    { item: "CONTACT US", path: "/contact" },
+  ];
 
   // Animation variants
   const mobileMenuVariants = {
@@ -86,26 +93,30 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8 text-sm">
             {navItems.map((item) => (
-              <motion.a
-                key={item}
-                href="#"
-                onClick={() => handleTabClick(item)}
+              <motion.div
+                key={item.item}
+                className="group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`relative py-2 playfair px-1 tracking-wider ${
-                  scrolled ? "text-white" : "text-white"
-                }`}
               >
-                {item}
-                <span
-                  className={`absolute bottom-0 left-0 w-full h-0.5 origin-left transition-all duration-300 
-                    ${
-                      activeTab === item
-                        ? "scale-x-100 bg-[#B59D71]"
-                        : "scale-x-0 group-hover:scale-x-100 bg-white"
-                    }`}
-                ></span>
-              </motion.a>
+                <Link
+                  to={item.path}
+                  onClick={() => handleTabClick(item.item)}
+                  className={`relative py-2 playfair px-1 tracking-wider ${
+                    scrolled ? "text-white" : "text-white"
+                  }`}
+                >
+                  {item.item}
+                  <span
+                    className={`absolute bottom-0 left-0 w-full h-0.5 origin-left transition-all duration-300 
+                      ${
+                        activeTab === item.item
+                          ? "scale-x-100 bg-[#B59D71]"
+                          : "scale-x-0 group-hover:scale-x-100 bg-white"
+                      }`}
+                  ></span>
+                </Link>
+              </motion.div>
             ))}
           </div>
 
@@ -184,17 +195,20 @@ const Navbar = () => {
 
                 <motion.div className="flex flex-col space-y-8">
                   {navItems.map((item) => (
-                    <motion.a
-                      key={item}
-                      href="#"
-                      onClick={() => handleTabClick(item)}
+                    <motion.div
+                      key={item.item}
                       variants={mobileItemVariants}
-                      className={`text-xl playfair font-medium ${
-                        activeTab === item ? "text-[#B59D71]" : "text-white"
-                      }`}
                     >
-                      {item}
-                    </motion.a>
+                      <Link
+                        to={item.path}
+                        onClick={() => handleTabClick(item.item)}
+                        className={`text-xl playfair font-medium ${
+                          activeTab === item.item ? "text-[#B59D71]" : "text-white"
+                        }`}
+                      >
+                        {item.item}
+                      </Link>
+                    </motion.div>
                   ))}
                   <motion.button
                     variants={mobileItemVariants}
