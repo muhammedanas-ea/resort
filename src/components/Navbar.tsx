@@ -74,7 +74,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <div className="w-28 h-10">
+            <div className="w-28 h-8">
               <img
                 src={logo}
                 alt="Logo"

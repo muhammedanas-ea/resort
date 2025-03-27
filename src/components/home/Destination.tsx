@@ -70,8 +70,11 @@ const Destination = () => {
   ];
 
   return (
-    <section className="bg-white" aria-label="Wayanad Tourist Attractions">
-      <header className="container mx-auto px-4 lg:px-8  py-16 lg:py-24 flex flex-col md:flex-row md:justify-between md:items-end gap-6">
+    <section
+      className="bg-white pt-16 lg:pt-24 "
+      aria-label="Wayanad Tourist Attractions"
+    >
+      <header className="container mx-auto px-4 mb-12 lg:px-8  flex flex-col md:flex-row md:justify-between md:items-end gap-6">
         <div>
           <div className="mb-10 w-24 border-t-2 border-[#B59D71]" />
           <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-[#B59D71]">
@@ -91,7 +94,7 @@ const Destination = () => {
       </header>
 
       <div className="relative">
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent z-10"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-40 z-10"></div>
 
         <nav
           className="flex overflow-x-auto hide-scrollbar relative z-0"
@@ -104,7 +107,7 @@ const Destination = () => {
               itemScope
               itemType="https://schema.org/TouristAttraction"
             >
-              <div className="relative h-96 group overflow-hidden rounded-t-xl">
+              <div className="relative h-96 group overflow-hidden rounded-xl">
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-transparent opacity-80 z-10"></div>
                 <img
                   src={destination.image}
