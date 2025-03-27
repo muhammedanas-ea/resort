@@ -23,7 +23,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 md:py-20" aria-label="FAQ Section">
+    <section className="py-16 md:py-20" aria-label="FAQ Section">
       <div className="container mx-auto px-4 lg:px-8 ">
         {/* Section Heading */}
         <div className="mb-12">
@@ -48,8 +48,21 @@ const FAQ = () => {
                   <h3 className="text-lg font-semibold text-gray-800 pr-4">
                     {faq.question}
                   </h3>
-                  <span className="flex-shrink-0 ml-2 text-[#B59D71] transform group-open:rotate-180 transition-transform">
-                    ▼
+                  <span className="flex-shrink-0 ml-4 text-[#B59D71]">
+                    <svg
+                      className="w-6 h-6 transform transition-transform duration-300 group-open:-rotate-180"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </span>
                 </summary>
                 <div className="mt-4 pt-4 border-t border-gray-200">

@@ -1,6 +1,6 @@
 const Gallery = () => {
   return (
-    <section className="bg-gray-50 py-20" aria-label="Resort Gallery">
+    <section className="py-20" aria-label="Resort Gallery">
       <div className="container mx-auto px-4 lg:px-8 mb-16">
         <div className="mb-8">
           <div className="mb-10 w-24 border-t-2 border-[#B59D71]" />

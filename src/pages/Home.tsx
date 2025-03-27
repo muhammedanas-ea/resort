@@ -1,17 +1,14 @@
 import About from "../components/home/About";
 import Hero from "../components/home/Hero";
-import Navbar from "../components/Navbar";
 import Facilities from "../components/home/Facilities";
 import Destination from "../components/home/Destination";
-import Footer from "../components/Footer";
 import Testimonials from "../components/home/Testimonials";
 import Gallery from "../components/home/Gallery";
 import FAQ from "../components/home/FAQ";
 
 const Home = () => {
   return (
-    <div className="overflow-hidden">
-      <Navbar />
+    <>
       <Hero />
       <About />
       <div className="h-[30rem] w-full">
@@ -29,9 +26,7 @@ const Home = () => {
       <Gallery />
       <Destination />
       <FAQ />
-
-      <Footer />
-    </div>
+    </>
   );
 };
 
