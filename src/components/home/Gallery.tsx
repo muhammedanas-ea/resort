@@ -12,6 +12,7 @@ const Gallery = () => {
           </h1>
         </div>
       </div>
+      
     </section>
   );
 };

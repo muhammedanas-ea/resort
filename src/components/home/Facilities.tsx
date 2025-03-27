@@ -51,7 +51,7 @@ const Facilities = () => {
         amenities designed to enhance your stay in Wayanad
       </h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
         {facilities.map((facility, index) => (
           <div
             key={index}

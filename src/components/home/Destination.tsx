@@ -103,11 +103,11 @@ const Destination = () => {
           {destinations.map((destination) => (
             <article
               key={destination.id}
-              className="flex-shrink-0 w-64 mx-[2px] first:ml-0 last:mr-0"
+              className="flex-shrink-0 w-64 mx-[5px] first:ml-0 last:mr-0"
               itemScope
               itemType="https://schema.org/TouristAttraction"
             >
-              <div className="relative h-96 group overflow-hidden rounded-xl">
+              <div className="relative h-96 group overflow-hidden rounded-lg">
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-transparent opacity-80 z-10"></div>
                 <img
                   src={destination.image}
