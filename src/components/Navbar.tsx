@@ -25,6 +25,10 @@ const Navbar = () => {
     setMobileMenuOpen(false);
   };
 
+  const handleWhatsAppClick = () => {
+    window.open(`https://wa.me/918157880985`, "_blank", "noopener,noreferrer");
+  };
+
   const navItems = [
     { item: "HOME", path: "/" },
     { item: "ABOUT US", path: "/about" },
@@ -195,15 +199,14 @@ const Navbar = () => {
 
                 <motion.div className="flex flex-col space-y-8">
                   {navItems.map((item) => (
-                    <motion.div
-                      key={item.item}
-                      variants={mobileItemVariants}
-                    >
+                    <motion.div key={item.item} variants={mobileItemVariants}>
                       <Link
                         to={item.path}
                         onClick={() => handleTabClick(item.item)}
                         className={`text-xl playfair font-medium ${
-                          activeTab === item.item ? "text-[#B59D71]" : "text-white"
+                          activeTab === item.item
+                            ? "text-[#B59D71]"
+                            : "text-white"
                         }`}
                       >
                         {item.item}
@@ -227,6 +230,40 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </div>
+      <motion.div
+        className="fixed bottom-16 right-3 md:right-8 z-20"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+          y: [0, -15, 0],
+        }}
+        transition={{
+          opacity: { duration: 0.5, delay: 1.5 },
+          scale: { duration: 0.5, delay: 1.5 },
+          y: {
+            duration: 2.5,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          },
+        }}
+        aria-label="Contact via WhatsApp"
+      >
+        <button
+          className="w-16 h-16 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full"
+          onClick={handleWhatsAppClick}
+        >
+          <img
+            className="w-full h-full object-cover"
+            src="https://vistararesort.com/images/watsapp-icon.webp"
+            alt="Contact Boska Resort via WhatsApp"
+            loading="lazy"
+            width="64"
+            height="64"
+          />
+        </button>
+      </motion.div>
     </nav>
   );
 };

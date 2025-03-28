@@ -1,14 +1,184 @@
+import { Building2, Users, Award, HeartHandshake } from "lucide-react";
 import PageHero from "../components/common/PageHero";
 
 const About = () => {
   return (
-    <div>
+    <div className="bg-gradient-to-b from-white to-amber-50">
       <PageHero
-        title="Our Story"
-        subtitle="Discover the heritage and passion behind Boska Resort's unparalleled hospitality experience."
+        subtitle="Where Tradition Meets Modern Luxury"
         backgroundImage="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
       />
+
+      {/* About Section */}
+      <div className="container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          {/* Left Column - Content */}
+          <div className="space-y-8 relative">
+            <div className="mb-10 w-24 border-t-2 border-[#B59D71]" />
+
+            <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-[#B59D71]">
+              Our Heritage
+            </h2>
+
+            <h1 className="mb-12 text-3xl md:text-4xl playfair font-normal leading-[1.15] md:leading-[1.15]">
+              Crafting Unforgettable Experiences Since 1992
+            </h1>
+
+            <div className="space-y-8">
+              <p className="text-gray-600 leading-relaxed">
+                Founded in the heart of Bali, Boska Group began as a single boutique resort and has grown into a collection of 18 luxury properties across Southeast Asia. Our philosophy blends authentic local culture with contemporary elegance.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                Each Boska property reflects our commitment to sustainable luxury, personalized service, and architectural beauty that honors its surroundings.
+              </p>
+
+              <div className="grid grid-cols-2 gap-6 pt-4">
+                <div className="flex items-center space-x-4">
+                  <Building2 className="w-8 h-8 text-[#B59D71]" />
+                  <div>
+                    <h3 className="text-lg playfair font-semibold text-gray-900">18</h3>
+                    <p className="text-gray-600">Luxury Properties</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <Award className="w-8 h-8 text-[#B59D71]" />
+                  <div>
+                    <h3 className="text-lg playfair font-semibold text-gray-900">32</h3>
+                    <p className="text-gray-600">Industry Awards</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <Users className="w-8 h-8 text-[#B59D71]" />
+                  <div>
+                    <h3 className="text-lg playfair font-semibold text-gray-900">1200+</h3>
+                    <p className="text-gray-600">Dedicated Staff</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <HeartHandshake className="w-8 h-8 text-[#B59D71]" />
+                  <div>
+                    <h3 className="text-lg playfair font-semibold text-gray-900">98%</h3>
+                    <p className="text-gray-600">Guest Satisfaction</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Image */}
+          <div className="bg-white rounded-lg shadow-[0px_10px_30px_rgba(181,157,113,0.1)] overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Boska Resort"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Management Section */}
+      <div className="bg-white py-16 lg:py-24">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center mb-16">
+            <div className="mb-10 w-24 border-t-2 border-[#B59D71] mx-auto" />
+            <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-[#B59D71]">
+              Leadership
+            </h2>
+            <h1 className="mb-6 text-3xl md:text-4xl playfair font-normal">
+              Meet Our Visionary Team
+            </h1>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Ketut Wijaya",
+                title: "Founder & CEO",
+                bio: "Pioneered Bali's luxury hospitality scene with 30+ years experience.",
+                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+              },
+              {
+                name: "Made Surya",
+                title: "Chief Operations Officer",
+                bio: "Oversees all resort operations with focus on sustainable excellence.",
+                image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+              },
+              {
+                name: "Ni Luh Putu",
+                title: "Guest Experience Director",
+                bio: "Ensures every stay exceeds expectations through meticulous service.",
+                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+              }
+            ].map((person, index) => (
+              <div key={index} className="group">
+                <div className="relative rounded-lg overflow-hidden mb-6 h-80 shadow-[0px_5px_15px_rgba(0,0,0,0.1)] group-hover:shadow-[0px_10px_25px_rgba(181,157,113,0.2)] transition-shadow duration-300">
+                  <img
+                    src={person.image}
+                    alt={person.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                </div>
+                <h3 className="text-xl playfair font-semibold mb-1">{person.name}</h3>
+                <p className="text-[#B59D71] mb-3">{person.title}</p>
+                <p className="text-gray-600">{person.bio}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Services Section */}
+      <div className="bg-gradient-to-b from-white to-amber-50 py-16 lg:py-24">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center mb-16">
+            <div className="mb-10 w-24 border-t-2 border-[#B59D71] mx-auto" />
+            <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-[#B59D71]">
+              Our Services
+            </h2>
+            <h1 className="mb-6 text-3xl md:text-4xl playfair font-normal">
+              Exceptional Hospitality Offerings
+            </h1>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: <HeartHandshake className="w-10 h-10 text-[#B59D71] mb-4 mx-auto" />,
+                title: "Personalized Concierge",
+                description: "Tailored experiences and exclusive access to local treasures"
+              },
+              {
+                icon: <Building2 className="w-10 h-10 text-[#B59D71] mb-4 mx-auto" />,
+                title: "Luxury Accommodations",
+                description: "Villas and suites blending traditional design with modern comfort"
+              },
+              {
+                icon: <Users className="w-10 h-10 text-[#B59D71] mb-4 mx-auto" />,
+                title: "Event Planning",
+                description: "Memorable weddings and corporate retreats in paradise"
+              },
+              {
+                icon: <Award className="w-10 h-10 text-[#B59D71] mb-4 mx-auto" />,
+                title: "Wellness Retreats",
+                description: "Holistic programs combining spa, yoga, and nutrition"
+              }
+            ].map((service, index) => (
+              <div 
+                key={index} 
+                className="bg-white p-8 rounded-lg shadow-[0px_5px_15px_rgba(0,0,0,0.05)] hover:shadow-[0px_10px_30px_rgba(181,157,113,0.1)] transition-shadow duration-300 text-center"
+              >
+                {service.icon}
+                <h3 className="text-xl playfair font-semibold mb-3">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
+
 export default About;

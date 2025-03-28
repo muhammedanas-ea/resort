@@ -1,7 +1,6 @@
 import React from "react";
 
 interface PageHeroProps {
-  title: string;
   subtitle: string;
   backgroundImage: string;
   overlayOpacity?: number;
@@ -10,7 +9,6 @@ interface PageHeroProps {
 }
 
 const PageHero: React.FC<PageHeroProps> = ({
-  title,
   subtitle,
   backgroundImage,
   overlayOpacity = 0.7,
@@ -19,7 +17,7 @@ const PageHero: React.FC<PageHeroProps> = ({
 }) => {
   return (
     <section
-      aria-label={title}
+      aria-label={subtitle}
       className="relative w-full bg-cover bg-center bg-fixed"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, ${overlayOpacity}), rgba(0, 0, 0, ${overlayOpacity})), url('${backgroundImage}')`,

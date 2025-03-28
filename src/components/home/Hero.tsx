@@ -6,34 +6,35 @@ const Hero = () => {
   const [currentLetterIndex, setCurrentLetterIndex] = useState(-1);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isNewImage, setIsNewImage] = useState(true);
-  
+
   // SEO-optimized rotating phrases
   const phrases = [
     { word: "Luxury", suffix: "Getaways" },
     { word: "Tranquil", suffix: "Escapes" },
   ];
-  
+
   const currentPhrase = phrases[currentWordIndex];
 
   // Optimized images with descriptive alt texts
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      alt: "Luxury resort pool overlooking Wayanad's misty mountains"
+      url:
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      alt: "Luxury resort pool overlooking Wayanad's misty mountains",
     },
     {
-      url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      alt: "Elegant villa accommodation at Boska Resort with private deck"
+      url:
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      alt: "Elegant villa accommodation at Boska Resort with private deck",
     },
     {
-      url: "https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      alt: "Sunset view from Boska Resort's luxury suites in Wayanad"
-    }
+      url:
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      alt: "Sunset view from Boska Resort's luxury suites in Wayanad",
+    },
   ];
 
-  const handleWhatsAppClick = () => {
-    window.open(`https://wa.me/918157880985`, "_blank", "noopener,noreferrer");
-  };
+ 
 
   // Letter animation effect
   useEffect(() => {
@@ -70,7 +71,10 @@ const Hero = () => {
   }, [isNewImage]);
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden" aria-label="Boska Resort Luxury Getaway">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      aria-label="Boska Resort Luxury Getaway"
+    >
       {/* Background Images with Lazy Loading */}
       <div className="absolute inset-0 z-0">
         {images.map((image, index) => (
@@ -164,40 +168,6 @@ const Hero = () => {
       </div>
 
       {/* WhatsApp Floating Button */}
-      <motion.div
-        className="fixed bottom-16 right-3 md:right-6 z-20"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{
-          opacity: 1,
-          scale: 1,
-          y: [0, -15, 0],
-        }}
-        transition={{
-          opacity: { duration: 0.5, delay: 1.5 },
-          scale: { duration: 0.5, delay: 1.5 },
-          y: {
-            duration: 2.5,
-            repeat: Infinity,
-            repeatType: "reverse",
-            ease: "easeInOut",
-          },
-        }}
-        aria-label="Contact via WhatsApp"
-      >
-        <button 
-          className="w-16 h-16 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-full"
-          onClick={handleWhatsAppClick}
-        >
-          <img
-            className="w-full h-full object-cover"
-            src="https://vistararesort.com/images/watsapp-icon.webp"
-            alt="Contact Boska Resort via WhatsApp"
-            loading="lazy"
-            width="64"
-            height="64"
-          />
-        </button>
-      </motion.div>
     </section>
   );
 };
