@@ -65,7 +65,7 @@ const Contact = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white rounded-lg p-8 lg:p-12 shadow-[0px_10px_30px_rgba(181,157,113,0.4)] hover:shadow-[0px_15px_40px_rgba(181,157,113,0.5)] transition-shadow duration-200">
+          <div className="bg-white rounded-lg p-8 lg:p-12 shadow-[0px_10px_30px_rgba(181,157,113,0.4)]">
             {" "}
             <form className="space-y-8">
               <div className="space-y-6">
@@ -74,7 +74,7 @@ const Contact = () => {
                     type="text"
                     name="name"
                     placeholder="Full Name"
-                    className="w-full px-6 py-4 border-b border-[#B59D71]/30 focus:border-[#B59D71] bg-transparent outline-none transition-colors duration-300 placeholder-gray-500"
+                    className="w-full  py-4 border-b border-[#B59D71]/30 focus:border-[#B59D71] bg-transparent outline-none transition-colors duration-300 placeholder-gray-500"
                     required
                   />
                 </div>
@@ -84,7 +84,7 @@ const Contact = () => {
                     type="email"
                     name="email"
                     placeholder="Email Address"
-                    className="w-full px-6 py-4 border-b border-[#B59D71]/30 focus:border-[#B59D71] bg-transparent outline-none transition-colors duration-300 placeholder-gray-500"
+                    className="w-full  py-4 border-b border-[#B59D71]/30 focus:border-[#B59D71] bg-transparent outline-none transition-colors duration-300 placeholder-gray-500"
                     required
                   />
                 </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                     type="text"
                     name="subject"
                     placeholder="Subject"
-                    className="w-full px-6 py-4 border-b border-[#B59D71]/30 focus:border-[#B59D71] bg-transparent outline-none transition-colors duration-300 placeholder-gray-500"
+                    className="w-full py-4 border-b border-[#B59D71]/30 focus:border-[#B59D71] bg-transparent outline-none transition-colors duration-300 placeholder-gray-500"
                     required
                   />
                 </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                     name="message"
                     placeholder="Your Message"
                     rows={3}
-                    className="w-full px-6 py-4 border-b border-[#B59D71]/30 focus:border-[#B59D71] bg-transparent outline-none transition-colors duration-300 placeholder-gray-500 resize-none"
+                    className="w-full  py-4 border-b border-[#B59D71]/30 focus:border-[#B59D71] bg-transparent outline-none transition-colors duration-300 placeholder-gray-500 resize-none"
                     required
                   />
                 </div>
