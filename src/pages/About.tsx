@@ -1,126 +1,147 @@
-import { Building2, Users, Award, HeartHandshake } from "lucide-react";
+import { FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 import PageHero from "../components/common/PageHero";
 
 const About = () => {
+  // Team members data
+  const teamMembers = [
+    {
+      name: "Sarah Johnson",
+      position: "General Manager",
+      image:
+        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      name: "Made Winarno",
+      position: "Head Chef",
+      image:
+        "https://images.unsplash.com/photo-1563237023-b1e970526dcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      name: "David Chen",
+      position: "Spa Director",
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      name: "Ayu Dewi",
+      position: "Guest Relations Manager",
+      image:
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    },
+  ];
+
   return (
-    <div>
+    <div className="bg-white">
       <PageHero
-        subtitle="Where Tradition Meets Modern Luxury"
-        backgroundImage="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+        subtitle="Experience Authentic Balinese Luxury"
+        backgroundImage="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
       />
 
-      {/* About Section */}
-      <div className="container mx-auto px-4 lg:px-8 py-16 lg:py-24">
-        <div className="grid grid-cols-1 gap-16 lg:gap-24">
-          {/* Left Column - Content */}
-          <div className="space-y-8 relative grid md:grid-cols-2">
-            <div>
-              <div className="mb-10 w-24 border-t-2 border-[#B59D71]" />
-
-              <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-[#B59D71]">
-                Our Heritage
-              </h2>
-
-              <h1 className="mb-12 text-3xl md:text-4xl playfair font-normal leading-[1.15] md:leading-[1.15]">
-                Crafting Unforgettable Experiences Since 1992
-              </h1>
-            </div>
-
-            <div className="space-y-8">
-              <p className="text-gray-600 leading-relaxed">
-                Founded in the heart of Bali, Boska Group began as a single
-                boutique resort and has grown into a collection of 18 luxury
-                properties across Southeast Asia. Our philosophy blends
-                authentic local culture with contemporary elegance.
+      {/* Our Story Section */}
+      <section className="container mx-auto px-4 lg:px-8 pt-16 lg:pt-24">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-16">
+          <div className="w-full md:w-1/2 text-left">
+            <div className="w-24 border-t-2 border-[#B59D71] mb-8" />
+            <h2 className="text-lg uppercase tracking-[0.3em] text-[#B59D71] mb-4">
+              Our Story
+            </h2>
+            <h1 className="text-3xl md:text-4xl playfair font-normal leading-tight mb-8">
+              A Sanctuary of Luxury in Ubud's Heart
+            </h1>
+            <div className="space-y-6 text-gray-600">
+              <p className="leading-relaxed">
+                Nestled among the lush rainforests and rice terraces of Ubud,
+                our resort combines traditional Balinese architecture with
+                modern luxury amenities to create an unforgettable experience
+                for our guests.
               </p>
-              <p className="text-gray-600 leading-relaxed">
-                Founded in the heart of Bali, Boska Group began as a single
-                boutique resort and has grown into a collection of 18 luxury
-                properties across Southeast Asia. Our philosophy blends
-                authentic local culture with contemporary elegance.
-              </p>
-
-              <p className="text-gray-600 leading-relaxed">
-                Each Boska property reflects our commitment to sustainable
-                luxury, personalized service, and architectural beauty that
-                honors its surroundings.
+              <p className="leading-relaxed">
+                Our resort features spacious villas, each with private pools and
+                panoramic views of the surrounding landscape.
               </p>
             </div>
           </div>
-
-          {/* Right Column - Image */}
+          <div className="w-full md:w-1/2 space-y-6 text-right">
+            <p className="leading-relaxed text-gray-600">
+              What began as a family dream has evolved into one of Bali's most
+              celebrated luxury destinations, while still maintaining the
+              intimate and personal touch that makes our property so special.
+            </p>
+            <div className="grid grid-cols-2 gap-4 mt-8">
+              <div className="text-center p-6 bg-[#F8F5F0]">
+                <h3 className="text-3xl text-[#B59D71] font-light mb-2">12+</h3>
+                <p className="text-sm uppercase tracking-wider">
+                  Years of Excellence
+                </p>
+              </div>
+              <div className="text-center p-6 bg-[#F8F5F0]">
+                <h3 className="text-3xl text-[#B59D71] font-light mb-2">98%</h3>
+                <p className="text-sm uppercase tracking-wider">
+                  Guest Satisfaction
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="bg-white h-[25rem] rounded-lg shadow-[0px_10px_30px_rgba(181,157,113,0.1)] overflow-hidden">
-        <img
-          src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-          alt="Boska Resort"
-          className="w-full h-full object-cover"
-        />
-      </div>
+      </section>
 
-      {/* Services Section */}
-      <div className="pb-16 lg:pb-24">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center mb-16">
-            <div className="mb-10 w-24 border-t-2 border-[#B59D71] mx-auto" />
-            <h2 className="mb-6 text-lg uppercase tracking-[0.3em] text-[#B59D71]">
-              Our Services
+      {/* Team Members Section */}
+      <section className="container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-16 mb-16">
+          <div className="w-full md:w-1/2 text-left">
+            <div className="w-24 border-t-2 border-[#B59D71] mb-8" />
+            <h2 className="text-lg uppercase tracking-[0.3em] text-[#B59D71] mb-4">
+              Meet Our Team
             </h2>
-            <h1 className="mb-6 text-3xl md:text-4xl playfair font-normal">
-              Exceptional Hospitality Offerings
+            <h1 className="text-3xl md:text-4xl font-normal playfair leading-tight">
+              The People Behind Your Perfect Stay
             </h1>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: (
-                  <HeartHandshake className="w-10 h-10 text-[#B59D71] mb-4 mx-auto" />
-                ),
-                title: "Personalized Concierge",
-                description:
-                  "Tailored experiences and exclusive access to local treasures",
-              },
-              {
-                icon: (
-                  <Building2 className="w-10 h-10 text-[#B59D71] mb-4 mx-auto" />
-                ),
-                title: "Luxury Accommodations",
-                description:
-                  "Villas and suites blending traditional design with modern comfort",
-              },
-              {
-                icon: (
-                  <Users className="w-10 h-10 text-[#B59D71] mb-4 mx-auto" />
-                ),
-                title: "Event Planning",
-                description:
-                  "Memorable weddings and corporate retreats in paradise",
-              },
-              {
-                icon: (
-                  <Award className="w-10 h-10 text-[#B59D71] mb-4 mx-auto" />
-                ),
-                title: "Wellness Retreats",
-                description:
-                  "Holistic programs combining spa, yoga, and nutrition",
-              },
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-lg border border-[#B59D71] hover:border-[#9D8460]  text-center"
-              >
-                {service.icon}
-                <h3 className="text-xl playfair font-semibold mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
-            ))}
+          <div className="w-full md:w-1/2 text-right">
+            <p className="text-gray-600 leading-relaxed">
+              Our dedicated team of professionals brings together years of
+              experience in luxury hospitality with authentic Balinese warmth
+              and culture.
+            </p>
           </div>
         </div>
-      </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="group rounded-lg overflow-hidden"
+            >
+              <div className="relative h-80 overflow-hidden">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {[FiInstagram, FiTwitter, FiLinkedin].map((Icon, i) => (
+                    <button
+                      key={i}
+                      className="p-2 bg-white text-[#B59D71] rounded-full hover:bg-[#B59D71] hover:text-white transition-colors duration-300"
+                    >
+                      <Icon size={16} />
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="mt-2 bg-white text-start">
+                <h3 className="text-xl playfair font-medium mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-[#B59D71] uppercase tracking-wider text-sm">
+                  {member.position}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
